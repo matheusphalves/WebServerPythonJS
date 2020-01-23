@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <!-- Meu css modificado-->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css"></link>
+    <title>Alfred Music - Os hits estão aqui!</title>
+    <!--ESTILOS CSS PARA ALGUNS ELEMENTOS-->
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <!--Página só é carregada depois de ter a lista de músicas carregada!-->
+  <body class="body" onload="listarMusicas()">
+
+        <nav id="topo" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+                <div class="container">
+        
+                    <a class="navbar-brand h1 mb-0 text-dark justify-content-center" href="index.html"><img src="images/web-logo.png" width="150" height="70" alt="Página inicial"></a>
+        
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                        <span class="navbar-toggler-icon my-toggler"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarSite">
+        
+                            <ul class="navbar-nav ml-auto mr-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link font-weight-bold" onclick="enviarMusica()" href="#">Enviar uma música</a>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a id="about" class="nav-link text-light" onclick="todasMusicas()" href="#">Todas as músicas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="about" class="nav-link text-light" onclick="sobre()" href="#">Sobre</a>
+                                    </li>
+                                </ul>
+        
+                    </div>
+        
+                </div>
+            </nav>
+
+ <div id="main" class="container justify-content-center my-12">
+      
+    <div class="musicas">
+        <h1 class="display-4 text-primary my-5">Recomendadas</h1>
+        <button type="button" onclick="listarMusicas()" class="btn btn-light">Atualizar lista</button>
+        <div id="lista" class="text-dark my-5"></div>
+    </div>
+
+    </div>
+    <!--AQUI FICA O RODAPÉ DO SITE-->
+    <footer id="footer" class="footer navbar-fixed-bottom bg-dark">
+        <div class="container">
+            <div class="row">
+                    <div class="col-sm-3 justify-content-center">
+                            <a class="navbar-brand h1 mb-0 text-dark" href="index.html"><img src="images/web-logo.png" width="200" height="70" alt="Página inicial"></a>
+                    </div>      
+                    <div id="musicao">                           
+                    </div>
+            </div>     
+        </div>  
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/cliente.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js" ></script>
+  </body>
+</html>

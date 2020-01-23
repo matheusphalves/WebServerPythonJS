@@ -1,0 +1,77 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+ *, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background: #333;
+}
+#player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -80px 0 0 -60px;
+}
+#player:after {
+    position: absolute;
+    content:'';
+    width: 150px;
+    height: 150px;
+    left: 0;
+    background: -webkit-linear-gradient(-45deg, rgba(102, 204, 204, 0.6) 0%, rgba(102, 204, 102, 0.9) 100%);
+    background: linear-gradient(-45deg, rgba(102, 204, 204, 0.6) 0%, rgba(102, 204, 102, 0.9) 100%);
+    border-radius: 25px;
+    box-shadow: 0 0 20px -5px #fff, inset 0 0 10px #fff, inset 0 70px rgba(255, 255, 255, 0.2);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#playback {
+    position: absolute;
+    color: rgba(102, 204, 255, 1);
+    text-shadow: 0 0 40px #000;
+}
+.fa-play {
+    top: 45px;
+    left: 55px;
+}
+.fa-pause {
+    top: 45px;
+    left: 40px;
+}
+.fa-lg {
+    font-size: 5.3em;
+}
+@-webkit-keyframes beat {
+    0% {
+        -webkit-transform: scale(1);
+        text-shadow: 0 0 40px #000;
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+        text-shadow: 0 0 10px #000;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        text-shadow: 0 0 40px #000;
+    }
+}
+@keyframes beat {
+    0% {
+        transform: scale(1);
+        text-shadow: 0 0 40px #000;
+    }
+    50% {
+        transform: scale(1.1);
+        text-shadow: 0 0 10px #000;
+    }
+    100% {
+        transform: scale(1);
+        text-shadow: 0 0 40px #000;
+    }
+}
+.beat {
+    -webkit-animation: beat 0.8s ease 0s infinite normal;
+    animation: beat 0.8s ease 0s infinite normal;
+}
