@@ -8,7 +8,7 @@ Project notes:
 
 - This project implements a simple music streamming service
 
-- Client side had made with JavaScript and Server side uses Python 3+
+- Client side has made with JavaScript and Server side uses Python 3+
 
 - The server uses the HTTP protocol in your implementation (header request and response). This is the main subject of discipline.
 
