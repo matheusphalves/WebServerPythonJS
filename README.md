@@ -1,26 +1,46 @@
-# WebServerPythonJS
-Web server made on Computer Network discipline in 2019.2. There are another developers students linked at developement like 
-- Murilo Stoldoni
-- Nilton Vieira and
-- Richard Jeremias. 
+# web-streamming-music-app
 
-Project notes:
+# Overview
+  This application implements a simple music streamming service. The client side was had made with JavaScript and his server uses Python 3+.
+  The our server implementation uses the HTTP protocol (header, request and response). However, some methods linkeds at service has been builded! So, you can use someone else server (you need will be implements only some features, listed below).
+  
+  Application made on Computer Network discipline in 2019.2. The server included only works for local network!
+  Github for our generic web-server: https://github.com/matheusphalves/generic-web-server
+  ## Contributors
+  
+  - Matheus Phelipe
+  - Murilo Stoldoni
+  - Nilton Vieira
+  - Richard Jeremias.
+  
+ 
+## What do I need? 
 
-- This project implements a simple music streamming service
+#### Front-end
+- HTML 5;
+- CSS;
+- JavaScript and knowledge on web sockets(XMLHttpRequest, for exemple); 
+- Boostrap 4
 
-- Client side has made with JavaScript and Server side uses Python 3+
+#### Back-end
+- Python 3+ and your socket API;
+- There is a web-server (python) included on this repository;
 
-- The server uses the HTTP protocol in your implementation (header request and response). This is the main subject of discipline.
 
-Front-end:
+#### What the other server must have to app works?
+- under construction
 
-- HTML 5
-- Bootstrap 4 framework
 
-Back-end
+## Screenshots
+#### Desktop browser
+![](/images github/01.png)
 
-Client: JavaScript 
-Server: Python 3
+![](/images github/02.png)
+![](/images github/03.png)
+![](/images github/04.png)
+
+### Mobile browser
+![](/images github/05.png)
 
 
 
