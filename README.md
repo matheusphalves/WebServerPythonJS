@@ -33,14 +33,14 @@
 
 ## Screenshots
 #### Desktop browser
-![](/images github/01.png)
+![](/images_github/01.png)
 
-![](/images github/02.png)
-![](/images github/03.png)
-![](/images github/04.png)
+![](/images_github/02.png)
+![](/images_github/03.png)
+![](/images_github/04.png)
 
 ### Mobile browser
-![](/images github/05.png)
+![](/images_github/05.png)
 
 
 
